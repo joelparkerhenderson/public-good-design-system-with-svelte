@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+/* Public Good Design System Custom Styles */
+
+/* Base styles for Public Good branding */
+:root {
+  --public-good-primary: #0284c7;
+  --public-good-secondary: #475569;
+}
+
+/* Custom component styles will be added as needed */
+
+/* Accessibility improvements */
+.sr-only {
+  @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+}
+
+/* Focus visible improvements for better keyboard navigation */
+.focus-visible {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
